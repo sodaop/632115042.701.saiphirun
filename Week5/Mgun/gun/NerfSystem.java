@@ -1,5 +1,4 @@
-package gun;
-
+package Week5.Mgun.gun;
 public class NerfSystem {
 
     public int gun;

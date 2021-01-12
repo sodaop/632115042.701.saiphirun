@@ -1,4 +1,4 @@
-package gun;
+package Week5.Mgun.gun;
 
 public class maingun {
     public static void main(String[] args) {
