@@ -13,5 +13,8 @@ public class Human {
         dog = new Cat();
         System.out.println("the Second calling hit animal");
         human.hit(dog);
+        dog = new Fish();
+        System.out.println("the Third calling hit animal");
+        human.hit(dog);
     }
 }
