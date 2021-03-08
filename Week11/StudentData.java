@@ -5,8 +5,8 @@ package Week11;
     public class StudentData{
 
         public String name;
-        public int age;
-        public double GPA;
+        public Integer age;
+        public Double GPA;
 
         public StudentData(){}
 
@@ -42,36 +42,39 @@ package Week11;
             return name==gueat.name;
           
         }
-        
-        public boolean equalsAge(Object obj){
+      
+        public boolean equals(Double obj){
             if (obj == null) {
                 
               return false;
                 
             }
-            if (obj == this) {
+            if (obj == this.GPA) {
+              return true;
+          }
+           
+         
+              StudentData gueat= new StudentData();
+              return GPA==gueat.getGPA();
+            
+          }
+
+          public boolean equalsGPA(Integer obj){
+            if (obj == null) {
+                
+              return false;
+                
+            }
+            if (obj == this.age) {
                 return true;
             }
          
-              StudentData gueat=(StudentData)obj;
+            StudentData gueat= new StudentData();
               return age==gueat.age;
             
           }
 
-          public boolean equalsGPA(Object obj){
-            if (obj == null) {
-                
-              return false;
-                
-            }
-            if (obj == this) {
-                return true;
-            }
-         
-              StudentData gueat=(StudentData)obj;
-              return GPA==gueat.GPA;
-            
-          }
+          
          
        
         
