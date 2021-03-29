@@ -59,7 +59,7 @@ package Week11;
             
           }
 
-          public boolean equalsGPA(Integer obj){
+          public boolean equals(Integer obj){
             if (obj == null) {
                 
               return false;
